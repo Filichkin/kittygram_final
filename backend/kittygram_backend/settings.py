@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['130.193.34.93', 'kittygramproject.read-books.org', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
