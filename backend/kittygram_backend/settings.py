@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
-DEBUG = False
+DEBUG = os.getenv('DEBUG', False)
 
-ALLOWED_HOSTS = ['130.193.34.93', 'kittygramproject.read-books.org', 'localhost']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '*').split(', ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
